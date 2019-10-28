@@ -108,10 +108,8 @@ public class MyArrayList<E> {
     public E remove(int index) {
         Objects.checkIndex(index, size);
         final Object[] es = elementData;
-
         @SuppressWarnings("unchecked") E oldValue = (E) es[index];
         fastRemove(es, index);
-
         return oldValue;
     }
 
