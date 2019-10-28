@@ -112,7 +112,6 @@ public class MyArrayList<E> {
         fastRemove(es, index);
         return oldValue;
     }
-
     private void fastRemove(Object[] es, int i) {
         modCount++;
         final int newSize;
